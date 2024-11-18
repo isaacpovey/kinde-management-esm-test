@@ -1,0 +1,69 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@kinde/management-api-js':
+        specifier: ^0.10.0
+        version: 0.10.0
+    devDependencies:
+      '@types/node':
+        specifier: ^22.9.0
+        version: 22.9.0
+      typescript:
+        specifier: ^5.6.3
+        version: 5.6.3
+
+packages:
+
+  '@kinde/jwt-decoder@0.2.0':
+    resolution: {integrity: sha512-dqtwCmAvywOVLkkUfp4UbqdvVLsK0cvHsJhU3gDY9rgjAdZhGw0vCreBW6j3MFLxbi6cZm7pMU7/O5SJgvN5Rw==}
+
+  '@kinde/management-api-js@0.10.0':
+    resolution: {integrity: sha512-kz/rdmB1sTCOwUNYMwu1n2mxJRayzxle4koTBFLRM1zTxLz1RPBqBxlYTe3qHHVnu4uqGVXZMJziq6gjUUYjAA==}
+
+  '@types/node@22.9.0':
+    resolution: {integrity: sha512-vuyHg81vvWA1Z1ELfvLko2c8f34gyA0zaic0+Rllc5lbCnbSyuvb2Oxpm6TAUAC/2xZN3QGqxBNggD1nNR2AfQ==}
+
+  aws-jwt-verify@4.0.1:
+    resolution: {integrity: sha512-kzvi71eD3w/mCpYRUY7cz6DX4bfYihGdI2yV3FYQ2JuZZenqAqDPz0gWj0ew6vlAtdEVBNb7p+Dm2TAIxpVYMA==}
+    engines: {node: '>=14.0.0'}
+
+  dotenv@16.4.5:
+    resolution: {integrity: sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==}
+    engines: {node: '>=12'}
+
+  typescript@5.6.3:
+    resolution: {integrity: sha512-hjcS1mhfuyi4WW8IWtjP7brDrG2cuDZukyrYrSauoXGNgx0S7zceP07adYkJycEr56BOUTNPzbInooiN3fn1qw==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
+  undici-types@6.19.8:
+    resolution: {integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==}
+
+snapshots:
+
+  '@kinde/jwt-decoder@0.2.0': {}
+
+  '@kinde/management-api-js@0.10.0':
+    dependencies:
+      '@kinde/jwt-decoder': 0.2.0
+      aws-jwt-verify: 4.0.1
+      dotenv: 16.4.5
+
+  '@types/node@22.9.0':
+    dependencies:
+      undici-types: 6.19.8
+
+  aws-jwt-verify@4.0.1: {}
+
+  dotenv@16.4.5: {}
+
+  typescript@5.6.3: {}
+
+  undici-types@6.19.8: {}

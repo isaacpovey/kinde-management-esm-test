@@ -1,0 +1,14 @@
+{
+  "include": ["./index.ts"],
+  "compilerOptions": {
+    "outDir": "build",
+    "lib": ["es2023"],
+    "target": "ESNext",
+    "module": "node16",
+    "moduleResolution": "node16",
+    "types": ["node"],
+    "esModuleInterop": true,
+    "isolatedModules": false
+  },
+  "exclude": ["**/node_modules", "./build"]
+}
